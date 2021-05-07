@@ -1,5 +1,6 @@
 package com.lyx.process.controller;
 
+import com.lyx.common.CommonResult;
 import com.lyx.entity.Employee;
 import com.lyx.process.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,8 @@ public class MyController
 	private EmployeeService service;
 
 	@GetMapping("/listAll")
-	public List<Employee> listAll()
+	public CommonResult listAll()
 	{
-		return service.list();
+		return CommonResult.successData(service.list());
 	}
 }

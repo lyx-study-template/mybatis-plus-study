@@ -1,4 +1,4 @@
-package com.lyx.process.service.impl;
+package com.lyx.process.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lyx.entity.Employee;
